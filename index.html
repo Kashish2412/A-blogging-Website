@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echo of Thought</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <i class="fas fa-feather-alt"></i>
+            <span>Echo of Thought</span>
+        </div>
+        <div class="nav-links">
+            <a href="read.html" class="nav-link"><i class="fas fa-book-reader"></i> Read</a>
+            <a href="write.html" class="nav-link"><i class="fas fa-pen"></i> Write</a>
+        </div>
+    </nav>
+
+    <div class="hero-section">
+        <h1>Welcome to Echo of Thought</h1>
+        <p>Share your stories, ideas, and thoughts with the world</p>
+    </div>
+
+    <div class="container">
+        <div id="login-section" class="login-card">
+            <div class="login-header">
+                <i class="fas fa-user-circle"></i>
+                <h2>Get Started</h2>
+            </div>
+            <div class="login-form">
+                <input type="text" id="username" placeholder="Enter your name">
+                <button onclick="login()" class="login-btn">
+                    <i class="fas fa-sign-in-alt"></i> Start Writing
+                </button>
+            </div>
+        </div>
+
+        <div id="greet-section" class="hidden welcome-card">
+            <h2 id="greet"></h2>
+            <div class="action-buttons">
+                <a href="read.html" class="action-btn read-btn">
+                    <i class="fas fa-book-reader"></i>
+                    Browse Stories
+                </a>
+                <a href="write.html" class="action-btn write-btn">
+                    <i class="fas fa-pen"></i>
+                    Share Your Story
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Echo of Thought. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
